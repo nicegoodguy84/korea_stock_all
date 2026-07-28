@@ -1,4 +1,4 @@
-name: Daily KRX Screener
+Name: Daily KRX Screener
 
 on:
   schedule:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # v3 -> v4로 수정
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # v4 -> v5로 수정
         with:
           python-version: '3.10'
 
